@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Rock-Paper-Scissors</title>
+</head>
+
+<body>
+
+  <!-- Header containing the start and restart button -->
+
+  <header>
+    <div class="start-btn-container">
+      <button class="start-btn">
+        <h3>START</h3>
+      </button>
+    </div>
+
+    <div class="restart-btn-container">
+      <button disabled class="restart-btn">
+        <h3>RESTART</h3>
+      </button>
+    </div>
+
+  </header>
+
+  <main>
+    <section id="main-section">
+
+      <!-- This div contains the rock, paper, scissors button -->
+
+      <div class="rock-paper-scissors-container">
+        <button disabled name="rock" value="rock" class="elements rock">
+          <h3>rock</h3>
+        </button>
+        <button disabled name="paper" value="paper" class="elements paper">
+          <h3>paper</h3>
+        </button>
+        <button disabled name="scissors" value="scissors" class="elements scissors">
+          <h3>scissors</h3>
+        </button>
+      </div>
+
+      <div class="main-container">
+
+        <!-- Header for the main div containing the computer and player score as well as the total number of rounds and the current number of round and a div that will display the game result for a round and at the end of the game confirm-->
+
+        <div class="main-container-header">
+          <div class="computer-score-container">
+            <h1 class="computer-score">Computer Score: 0</h1>
+          </div>
+
+          <div class="player-score-container">
+            <h1 class="player-score">player Score: 0</h1>
+          </div>
+        </div>
+
+        <div class="game-result-container">
+          <h1 class="game-result"></h1>
+          <h1 class="final-result"></h1>
+          <h1 class="restart-message"></h1>
+        </div>
+
+        <div class="main-container-footer">
+          <h1 class="total-number-of-rounds">Total Rounds: 0</h1>
+          <h1 class="actual-round">Actual Round: 0</h1>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <script src="./src/index.js"></script>
+</body>
+
+</html>

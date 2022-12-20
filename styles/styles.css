@@ -1,0 +1,546 @@
+/* DESKTOP VERSION */
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(120deg, rgba(255, 0, 0, 0.658), blue);
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button>* {
+  pointer-events: none;
+}
+
+.start-btn-container {
+  width: auto;
+  height: auto;
+  margin: 0 0 0 30px;
+}
+
+.start-btn {
+  width: 100%;
+  height: 100%;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 255, 0.5);
+  color: white;
+}
+
+.start-btn:hover {
+  width: 100%;
+  height: 100%;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 255);
+}
+
+.start-btn:active {
+  width: 100%;
+  height: 100%;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 255);
+  border: 2px outset blue;
+}
+
+.restart-btn-container {
+  width: auto;
+  height: auto;
+  margin: 0 30px 0 0;
+}
+
+.restart-btn {
+  width: 100%;
+  height: 100%;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 0, 0, 0.5);
+  color: white;
+}
+
+.restart-btn:hover {
+  width: 100%;
+  height: 100%;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 0, 0, 0.658);
+}
+
+.restart-btn:active {
+  width: 100%;
+  height: 100%;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 0, 0, 0.658);
+  border: 2px outset rgba(255, 0, 0, 0.658);
+}
+
+#main-section {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rock-paper-scissors-container {
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 0 40px 0;
+}
+
+.rock {
+  padding: 20px 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(300deg, rgba(0, 0, 255, 0.411), rgba(255, 0, 0, 0.411));
+  color: white;
+}
+
+.paper {
+  padding: 20px 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(300deg, rgba(0, 0, 255, 0.411), rgba(255, 0, 0, 0.411));
+  color: white;
+}
+
+.scissors {
+  padding: 20px 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(300deg, rgba(0, 0, 255, 0.411), rgba(255, 0, 0, 0.411));
+  color: white;
+}
+
+.rock:hover {
+  padding: 20px 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(300deg, rgba(0, 0, 255, 0.658), rgba(255, 0, 0, 0.658));
+  color: white;
+}
+
+.paper:hover {
+  padding: 20px 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(300deg, rgba(0, 0, 255, 0.658), rgba(255, 0, 0, 0.658));
+  color: white;
+}
+
+.scissors:hover {
+  padding: 20px 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(300deg, rgba(0, 0, 255, 0.658), rgba(255, 0, 0, 0.658));
+  color: white;
+}
+
+.rock:active {
+  padding: 20px 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(300deg, rgba(0, 0, 255, 0.658), rgba(255, 0, 0, 0.658));
+  color: white;
+  border: 2px outset blue;
+}
+
+.paper:active {
+  padding: 20px 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(300deg, rgba(0, 0, 255, 0.658), rgba(255, 0, 0, 0.658));
+  color: white;
+  border: 2px outset blue;
+}
+
+.scissors:active {
+  padding: 20px 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(300deg, rgba(0, 0, 255, 0.658), rgba(255, 0, 0, 0.658));
+  color: white;
+  border: 2px outset blue;
+}
+
+@keyframes main-shadow {
+  from {
+    box-shadow: 0 0 50px 0px blue;
+  }
+
+  to {
+    box-shadow: 0 0 50px 0px rgba(255, 0, 0, 0.658);
+  }
+}
+
+.main-container {
+  width: 50%;
+  height: 75%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 0px blue;
+  animation-name: main-shadow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.main-container-header {
+  width: 100%;
+  height: 10%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.computer-score-container {
+  width: auto;
+  height: auto;
+  margin: 0 0 0 20px;
+}
+
+.computer-score {
+  color: rgba(255, 0, 0, 0.658);
+}
+
+.player-score-container {
+  width: auto;
+  height: auto;
+  margin: 0 20px 0 0;
+}
+
+.player-score {
+  color: blue;
+}
+
+.game-result-container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-result {
+  color: rgb(67, 0, 190);
+  margin: 0 0 20px 0;
+}
+
+.final-result {
+  color: rgb(67, 0, 190);
+  margin: 0 0 20px 0;
+}
+
+.restart-message {
+  color: rgb(67, 0, 190);
+}
+
+.main-container-footer {
+  width: 100%;
+  height: 10%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.total-number-of-rounds {
+  color: rgb(67, 0, 190);
+  margin: 0 0 0 20px;
+}
+
+.actual-round {
+  color: rgb(67, 0, 190);
+  margin: 0 20px 0 0;
+}
+
+/* MOBILE VERSION - Below 1440px */
+
+@media only screen and (max-width: 1440px) {
+
+  body,
+  html {
+    overflow: hidden;
+  }
+
+  .start-btn-container {
+    margin: 30px 0 0 30px;
+  }
+
+  .start-btn {
+    padding: 15px 35px;
+  }
+
+  .start-btn:hover {
+    padding: 15px 35px;
+  }
+
+  .start-btn:active {
+    padding: 15px 35px;
+  }
+
+  .restart-btn-container {
+    margin: 30px 30px 0 0;
+  }
+
+  .restart-btn {
+    padding: 15px 35px;
+  }
+
+  .restart-btn:hover {
+    padding: 15px 35px;
+  }
+
+  .restart-btn:active {
+    padding: 15px 35px;
+  }
+
+  rock-paper-scissors-container {
+    margin: 0 0 30px 0;
+  }
+
+  .rock {
+    padding: 10px 30px;
+  }
+
+  .paper {
+    padding: 10px 30px;
+    margin: 0 10px 0 10px;
+  }
+
+  .scissors {
+    padding: 10px 30px;
+  }
+
+  .rock:hover {
+    padding: 10px 30px;
+  }
+
+  .paper:hover {
+    padding: 10px 30px;
+  }
+
+  .scissors:hover {
+    padding: 10px 30px;
+  }
+
+  .rock:active {
+    padding: 10px 30px;
+  }
+
+  .paper:active {
+    padding: 10px 30px;
+  }
+
+  .scissors:active {
+    padding: 10px 30px;
+  }
+
+  .main-container {
+    width: 90%;
+  }
+
+  .computer-score-container {
+    margin: 0 0 0 10px;
+  }
+
+  .player-score-container {
+    margin: 0 10px 0 0;
+  }
+
+  .computer-score {
+    font-size: 1.2rem;
+  }
+
+  .player-score {
+    font-size: 1.2rem;
+  }
+
+  .game-result {
+    font-size: 1.3rem;
+    width: 75%;
+    text-align: center;
+  }
+
+  .final-result {
+    font-size: 1.3rem;
+    width: 75%;
+    text-align: center;
+  }
+
+  .restart-message {
+    width: 75%;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .total-number-of-rounds {
+    font-size: 1.2rem;
+    margin: 0 0 0 10px;
+  }
+
+  .actual-round {
+    font-size: 1.2rem;
+    margin: 0 10px 0 0;
+  }
+}
+
+/* MOBILE VERSION - Below 280px */
+
+@media only screen and (max-width: 280px) {
+
+  body,
+  html {
+    overflow: hidden;
+  }
+
+  .start-btn-container {
+    margin: 30px 0px 0 10px;
+  }
+
+  .start-btn {
+    padding: 10px 30px;
+  }
+
+  .start-btn:hover {
+    padding: 10px 30px;
+  }
+
+  .start-btn:active {
+    padding: 10px 30px;
+  }
+
+  .restart-btn-container {
+    margin: 30px 10px 0 0px;
+  }
+
+  .restart-btn {
+    padding: 10px 30px;
+  }
+
+  .restart-btn:hover {
+    padding: 10px 30px;
+  }
+
+  .restart-btn:active {
+    padding: 10px 30px;
+  }
+
+  rock-paper-scissors-container {
+    margin: 0 0 20px 0;
+  }
+
+  .rock {
+    padding: 10px 15px;
+  }
+
+  .paper {
+    padding: 10px 15px;
+    margin: 0 13px 0 13px;
+  }
+
+  .scissors {
+    padding: 10px 15px;
+  }
+
+  .rock:hover {
+    padding: 10px 15px;
+  }
+
+  .paper:hover {
+    padding: 10px 15px;
+  }
+
+  .scissors:hover {
+    padding: 10px 15px;
+  }
+
+  .rock:active {
+    padding: 10px 15px;
+  }
+
+  .paper:active {
+    padding: 10px 15px;
+  }
+
+  .scissors:active {
+    padding: 10px 15px;
+  }
+
+  .main-container {
+    width: 90%;
+  }
+
+  .computer-score-container {
+    margin: 0 0 0 10px;
+  }
+
+  .player-score-container {
+    margin: 0 10px 0 0;
+  }
+
+  .computer-score {
+    font-size: 0.9rem;
+  }
+
+  .player-score {
+    font-size: 0.9rem;
+  }
+
+  .game-result {
+    font-size: 1.2rem;
+    width: 75%;
+    text-align: center;
+  }
+
+  .final-result {
+    font-size: 1.2rem;
+    width: 75%;
+    text-align: center;
+  }
+
+  .restart-message {
+    width: 75%;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .total-number-of-rounds {
+    font-size: 0.9rem;
+    margin: 0 0 0 10px;
+  }
+
+  .actual-round {
+    font-size: 0.9rem;
+    margin: 0 10px 0 0;
+  }
+}
