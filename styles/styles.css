@@ -4,10 +4,13 @@
 html {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background: linear-gradient(120deg, rgba(255, 0, 0, 0.658), blue);
+  background: url("../images/Background-Texture.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
 }
@@ -31,32 +34,32 @@ button>* {
 }
 
 .start-btn {
+  transition: ease 150ms all;
   width: 100%;
   height: 100%;
   padding: 20px 40px;
-  border: none;
   border-radius: 10px;
-  background-color: rgba(0, 0, 255, 0.5);
-  color: white;
+  background-color: #5B0027;
+  color: whitesmoke;
+  border: 5px outset #A00938;
 }
 
 .start-btn:hover {
   width: 100%;
   height: 100%;
   padding: 20px 40px;
-  border: none;
   border-radius: 10px;
-  background-color: rgb(0, 0, 255);
+  background-color: #5B0027;
+  border: 3px outset #A00938;
 }
 
 .start-btn:active {
   width: 100%;
   height: 100%;
   padding: 20px 40px;
-  border: none;
   border-radius: 10px;
-  background-color: rgb(0, 0, 255);
-  border: 2px outset blue;
+  background-color: #5B0027;
+  border: 1px outset #A00938;
 }
 
 .restart-btn-container {
@@ -66,32 +69,32 @@ button>* {
 }
 
 .restart-btn {
+  transition: ease 150ms all;
   width: 100%;
   height: 100%;
   padding: 20px 40px;
-  border: none;
   border-radius: 10px;
-  background-color: rgba(255, 0, 0, 0.5);
-  color: white;
+  background-color: #1F01A2;
+  border: 5px outset blue;
+  color: whitesmoke;
 }
 
 .restart-btn:hover {
   width: 100%;
   height: 100%;
   padding: 20px 40px;
-  border: none;
   border-radius: 10px;
-  background-color: rgba(255, 0, 0, 0.658);
+  background-color: #1F01A2;
+  border: 3px outset blue;
 }
 
 .restart-btn:active {
   width: 100%;
   height: 100%;
   padding: 20px 40px;
-  border: none;
   border-radius: 10px;
-  background-color: rgba(255, 0, 0, 0.658);
-  border: 2px outset rgba(255, 0, 0, 0.658);
+  background-color: #1F01A2;
+  border: 1px outset blue;
 }
 
 #main-section {
@@ -113,101 +116,87 @@ button>* {
 }
 
 .rock {
+  transition: ease 150ms all;
   padding: 20px 40px;
-  border: none;
   border-radius: 10px;
-  background: linear-gradient(300deg, rgba(0, 0, 255, 0.411), rgba(255, 0, 0, 0.411));
-  color: white;
+  background: #1A0363;
+  border: 5px outset #360089;
+  color: whitesmoke;
 }
 
 .paper {
+  transition: ease 150ms all;
   padding: 20px 40px;
-  border: none;
   border-radius: 10px;
-  background: linear-gradient(300deg, rgba(0, 0, 255, 0.411), rgba(255, 0, 0, 0.411));
-  color: white;
+  background: #1A0363;
+  border: 5px outset #360089;
+  color: whitesmoke;
 }
 
 .scissors {
+  transition: ease 150ms all;
   padding: 20px 40px;
   border: none;
   border-radius: 10px;
-  background: linear-gradient(300deg, rgba(0, 0, 255, 0.411), rgba(255, 0, 0, 0.411));
-  color: white;
+  background: #1A0363;
+  border: 5px outset #360089;
+  color: whitesmoke;
 }
 
 .rock:hover {
   padding: 20px 40px;
-  border: none;
   border-radius: 10px;
-  background: linear-gradient(300deg, rgba(0, 0, 255, 0.658), rgba(255, 0, 0, 0.658));
-  color: white;
+  background: #1A0363;
+  border: 3px outset #360089;
 }
 
 .paper:hover {
   padding: 20px 40px;
   border: none;
   border-radius: 10px;
-  background: linear-gradient(300deg, rgba(0, 0, 255, 0.658), rgba(255, 0, 0, 0.658));
-  color: white;
+  background: #1A0363;
+  border: 3px outset #360089;
 }
 
 .scissors:hover {
   padding: 20px 40px;
   border: none;
   border-radius: 10px;
-  background: linear-gradient(300deg, rgba(0, 0, 255, 0.658), rgba(255, 0, 0, 0.658));
-  color: white;
+  background: #1A0363;
+  border: 3px outset #360089;
 }
 
 .rock:active {
   padding: 20px 40px;
   border: none;
   border-radius: 10px;
-  background: linear-gradient(300deg, rgba(0, 0, 255, 0.658), rgba(255, 0, 0, 0.658));
-  color: white;
-  border: 2px outset blue;
+ background: #1A0363;
+  border: 1px outset #360089;
 }
 
 .paper:active {
   padding: 20px 40px;
   border: none;
   border-radius: 10px;
-  background: linear-gradient(300deg, rgba(0, 0, 255, 0.658), rgba(255, 0, 0, 0.658));
-  color: white;
-  border: 2px outset blue;
+  background: #1A0363;
+  border: 1px outset #360089;
 }
 
 .scissors:active {
   padding: 20px 40px;
   border: none;
   border-radius: 10px;
-  background: linear-gradient(300deg, rgba(0, 0, 255, 0.658), rgba(255, 0, 0, 0.658));
-  color: white;
-  border: 2px outset blue;
-}
-
-@keyframes main-shadow {
-  from {
-    box-shadow: 0 0 50px 0px blue;
-  }
-
-  to {
-    box-shadow: 0 0 50px 0px rgba(255, 0, 0, 0.658);
-  }
+  background: #1A0363;
+  border: 1px outset #360089;
 }
 
 .main-container {
   width: 50%;
   height: 75%;
-  background-color: white;
+  background-color: transparent;
   border-radius: 10px;
-  box-shadow: 0 0 40px 0px blue;
-  animation-name: main-shadow;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+  box-shadow: inset 0 0 0px 10px #1A0363;
+  border: 10px outset #360089;
 }
 
 .main-container-header {
@@ -227,7 +216,7 @@ button>* {
 }
 
 .computer-score {
-  color: rgba(255, 0, 0, 0.658);
+  color: whitesmoke;
 }
 
 .player-score-container {
@@ -237,7 +226,7 @@ button>* {
 }
 
 .player-score {
-  color: blue;
+  color: whitesmoke;
 }
 
 .game-result-container {
@@ -250,17 +239,17 @@ button>* {
 }
 
 .game-result {
-  color: rgb(67, 0, 190);
+  color: whitesmoke;
   margin: 0 0 20px 0;
 }
 
 .final-result {
-  color: rgb(67, 0, 190);
+  color: whitesmoke;
   margin: 0 0 20px 0;
 }
 
 .restart-message {
-  color: rgb(67, 0, 190);
+  color: whitesmoke;
 }
 
 .main-container-footer {
@@ -274,12 +263,12 @@ button>* {
 }
 
 .total-number-of-rounds {
-  color: rgb(67, 0, 190);
+  color: whitesmoke;
   margin: 0 0 0 20px;
 }
 
 .actual-round {
-  color: rgb(67, 0, 190);
+  color: whitesmoke;
   margin: 0 20px 0 0;
 }
 
